@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+.main-container{
+    width: 600px;
+    background-color: white;  
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgb(189, 185, 185);
+    padding: 10px;;
+}
+h1{
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+span{
+    font-size: 14px;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.txt-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -10px;
+}
+label{
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+input{
+    padding: 2px;
+}
+input, select, textarea:focus{
+    outline-color: rgb(243, 180, 180);
+    
+}
+input::placeholder{
+    font-size: 12px;
+    padding: 2px;
+    color: gray;
+    
+}
+select, #txtdt, #updfile{
+    color: gray;
+    font-size: 12px;
+    padding: 4px;
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    padding: 5px;
+    color: gray;
+    background-color: black
+}
+button:hover{
+    padding: 5px;
+    color: black;
+    background-color: gray
+    
+}
+.text-area{
+    display: grid;
+    grid-column: 1 / span 2;
+}
+.text-area label{
+    margin-bottom: -10px;
+}
